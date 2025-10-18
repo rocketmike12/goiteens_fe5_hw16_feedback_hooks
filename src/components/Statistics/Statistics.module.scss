@@ -1,0 +1,9 @@
+.statistics {
+	&__item {
+        font-weight: 500;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

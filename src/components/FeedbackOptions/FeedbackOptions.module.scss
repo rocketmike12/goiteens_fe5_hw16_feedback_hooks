@@ -1,0 +1,19 @@
+.feedback-options {
+	&__title {
+		margin-top: 0;
+	}
+	&__btn {
+		margin-right: 8px;
+		padding: 16px;
+
+		font-weight: 500;
+
+		background-color: #0a000c;
+		color: #cba6f7;
+		outline: 1px solid #cba6f7;
+
+		&:hover {
+			background-color: #1f1626;
+		}
+	}
+}
