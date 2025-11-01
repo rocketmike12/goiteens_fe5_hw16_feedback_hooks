@@ -2,8 +2,13 @@
 	&__title {
 		margin-top: 0;
 	}
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
 	&__btn {
-		margin-right: 8px;
 		padding: 16px;
 
 		font-weight: 500;

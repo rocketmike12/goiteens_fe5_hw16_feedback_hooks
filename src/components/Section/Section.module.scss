@@ -1,0 +1,10 @@
+.section {
+    outline: 1px solid #cba6f7;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+
+    & h2 {
+        margin-bottom: 16px;
+    }
+}

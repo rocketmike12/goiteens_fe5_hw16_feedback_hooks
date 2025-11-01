@@ -1,21 +1,16 @@
-import { Component } from "react";
+import { Section } from "../Section/Section";
 
 import styles from "./FeedbackOptions.module.scss";
 
-export class FeedbackOptions extends Component {
-	constructor() {
-		super();
-	}
-
-	render() {
-		return (
-			<>
-				<div className={styles["feedback-options"]}>
-					<h1 className={styles["feedback-options__title"]}>Please leave feedback</h1>
+export const FeedbackOptions = function ({ handleFeedback }) {
+	return (
+		<>
+			<Section title="Please leave feedback">
+				<div className={styles["feedback-options__btn-wrap"]}>
 					<button
 						className={styles["feedback-options__btn"]}
 						onClick={() => {
-							this.props.handleFeedback("good");
+							handleFeedback("good");
 						}}
 					>
 						good
@@ -23,7 +18,7 @@ export class FeedbackOptions extends Component {
 					<button
 						className={styles["feedback-options__btn"]}
 						onClick={() => {
-							this.props.handleFeedback("neutral");
+							handleFeedback("neutral");
 						}}
 					>
 						neutral
@@ -31,13 +26,13 @@ export class FeedbackOptions extends Component {
 					<button
 						className={styles["feedback-options__btn"]}
 						onClick={() => {
-							this.props.handleFeedback("bad");
+							handleFeedback("bad");
 						}}
 					>
 						bad
 					</button>
 				</div>
-			</>
-		);
-	}
-}
+			</Section>
+		</>
+	);
+};
